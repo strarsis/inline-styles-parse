@@ -2,7 +2,7 @@ var test              = require('tape')
   , inlineStylesParse = require('../');
 
 test('properly prepares a rule from passed declarations', function (t) {
-  t.plan(5);
+  t.plan(7);
 
   t.equal(inlineStylesParse.declarationsToRule(
     'padding:1em;'),
@@ -29,6 +29,15 @@ test('properly prepares a rule from passed declarations', function (t) {
     '.dummy{-webkit-transition: all 4s ease;' + "\n" + '-webkit-border-top-left-radius: 10px;}'
   );
 
+
+  t.equal(inlineStylesParse.declarationsToRule(
+    'padding:1em;', '.test'),
+    '.test{padding:1em;}'
+  );
+  t.equal(inlineStylesParse.declarationsToRule(
+    'padding:1em;', '#abc'),
+    '#abc{padding:1em;}'
+  );
 });
 
 test('properly extracts declarations from a passed rule', function(t) {
