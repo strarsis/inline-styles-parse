@@ -1,5 +1,39 @@
 {
   "devDependencies": {
     "tape": "^4.2.2"
-  }
+  },
+  "name": "inline-styles-parse",
+  "version": "1.0.0",
+  "description": "Handles inline styles for consumption by a CSS parser that expects a full CSS rule instead.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strarsis/inline-styles-parse.git"
+  },
+  "keywords": [
+    "css",
+    "styles",
+    "inline",
+    "parse",
+    "csso",
+    "css",
+    "parser",
+    "parser",
+    "declarations",
+    "rule",
+    "full"
+  ],
+  "author": "strarsis <strarsis@gmail.com> (https://github.com/strarsis)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strarsis/inline-styles-parse/issues"
+  },
+  "homepage": "https://github.com/strarsis/inline-styles-parse#readme"
 }
