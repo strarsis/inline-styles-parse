@@ -1,6 +1,7 @@
 # inline-styles-parse
 Handles inline styles for consumption by a CSS parser that expects a full CSS rule instead.
 
+[![NPM](https://nodei.co/npm/inline-styles-parse.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/inline-styles-parse/)
 
 ## Usage
 ````
