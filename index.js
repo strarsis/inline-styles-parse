@@ -1,16 +1,16 @@
 // prepares css rule from passed declarations
-var declarationsToRule = function(strDeclarations, selectorName) {
-    if(!selectorName) { selectorName = '.dummy'; }
-    return selectorName + '{' + strDeclarations + '}';
+var declarationsToRule = function(declarations, selector) {
+    if(!selector) { selector = '.dummy'; }
+    return selector + '{' + declarations + '}';
 };
 
 var rxRuleDeclarations = /([\s\S]*?){([\s\S]*?)}/i; // \s\S instead . for dotall
 
 // extracts declarations from passed css rule
-var ruleToDeclarations = function(strRule) {
-    var matches = strRule.match(rxRuleDeclarations);
+var ruleToDeclarations = function(rule) {
+    var matches = rule.match(rxRuleDeclarations);
     if(!matches || matches.length < 2) {
-      throw Error('Error parsing rule ' + strRule);
+      throw Error('Error parsing rule ' + rule);
       return false;
     }
     return matches[2];
