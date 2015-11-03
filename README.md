@@ -2,6 +2,11 @@
 Handles inline styles for consumption by a CSS parser that expects a full CSS rule instead.
 
 
+[![Build Status](https://travis-ci.org/strarsis/inline-styles-parse.svg)](https://travis-ci.org/strarsis/inline-styles-parse)
+
+[![NPM](https://nodei.co/npm/inline-styles-parse.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/inline-styles-parse/)
+
+
 ## Usage
 ````
 npm install --save inline-styles-parse
